@@ -64,10 +64,6 @@ allprojects {
         google()
         jcenter()
     }
-
-    configurations.all {
-        resolutionStrategy.force "junit:junit:${versions.junit4}"
-    }
 }
 
 task clean(type: Delete) {
