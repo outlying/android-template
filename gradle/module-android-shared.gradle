@@ -36,5 +36,9 @@ dependencies {
     implementation "androidx.appcompat:appcompat:${versions.androidx.appcompat}"
     implementation "androidx.core:core-ktx:${versions.androidx.appcompat}"
 
-    testImplementation 'junit:junit:4.12'
+    testImplementation "junit:junit:${versions.junit4}"
+}
+
+configurations.all {
+    resolutionStrategy.force "junit:junit:${versions.junit4}"
 }
