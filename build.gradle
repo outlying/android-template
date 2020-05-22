@@ -34,7 +34,7 @@ buildscript {
             "junit4"  : "4.13",
             "kotlin"  : [
                     "base"      : "1.3.72",
-                    "coroutines": "1.3.5"
+                    "coroutines": "1.3.7"
             ],
             "plugins" : [
                     "android"     : "3.6.2",
