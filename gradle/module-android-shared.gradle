@@ -34,7 +34,7 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.kotlin.coroutines}"
 
     implementation "androidx.appcompat:appcompat:${versions.androidx.appcompat}"
-    implementation "androidx.core:core-ktx:${versions.androidx.appcompat}"
+    implementation "androidx.core:core-ktx:${versions.androidx.core}"
 
     testImplementation "junit:junit:${versions.junit4}"
 }
