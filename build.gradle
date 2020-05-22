@@ -66,6 +66,23 @@ allprojects {
     }
 }
 
+def isNonStable = { String version ->
+    def nonStableKeywords = ['ALPHA', 'BETA', 'M1', 'RC'].any { version.toUpperCase().contains(it) }
+    return nonStableKeywords
+}
+
+dependencyUpdates {
+    resolutionStrategy {
+        componentSelection {
+            all {
+                if (isNonStable(it.candidate.version) && !isNonStable(it.currentVersion)) {
+                    reject('Release candidate')
+                }
+            }
+        }
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
