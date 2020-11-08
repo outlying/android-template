@@ -16,6 +16,6 @@ dependencies {
     implementation "androidx.navigation:navigation-ui:${versions.androidx.navigation}"
     implementation "androidx.navigation:navigation-ui-ktx:${versions.androidx.navigation}"
 
-    androidTestImplementation "androidx.test.ext:junit:${versions.androidx.test.ext-junit}"
+    androidTestImplementation "androidx.test.ext:junit:${versions.androidx.test.extjunit}"
     androidTestImplementation "androidx.test.espresso:espresso-core:${versions.androidx.test.espresso}"
 }
