@@ -42,7 +42,7 @@ buildscript {
             ],
             "plugins" : [
                     "android"     : "4.1.0",
-                    "dependencies": "0.28.0"
+                    "dependencies": "0.35.0"
             ]
     ]
 
