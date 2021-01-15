@@ -41,7 +41,7 @@ buildscript {
                     "coroutines": "1.4.1"
             ],
             "plugins" : [
-                    "android"     : "4.1.0",
+                    "android"     : "4.1.1",
                     "dependencies": "0.35.0"
             ]
     ]
